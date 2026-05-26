@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-press-start: "Press Start 2P", cursive;
+  
+  --color-game-bg: #f7f7f7;
+  --color-game-canvas: #ffffff;
+  --color-game-text: #535353;
+  --color-game-accent: #ff5252;
+}
+
+@layer base {
+  body {
+    @apply font-press-start bg-game-bg;
+  }
+}
+
+/* Hide scrollbar for immersive feel */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
